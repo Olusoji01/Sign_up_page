@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/294a6ec635.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js"></script>
+    <title>Sign-up|Individual</title>
+</head>
+<body>
+    <header id="mobile_header">
+        <p>9:41</p>
+        <div>
+            <img src="./Image/ios/Combined Shape.png" alt="Combined">
+            <img src="./Image/ios/Wi-Fi.png" alt="Wifi">
+            <img src="./Image/ios/Battery.png" alt="Battery">
+        </div>
+    </header>
+    <section>
+        <div class="logo_div" id="smallscreen_div">
+            <img src="Image/Logo.png" alt="Logo">
+            <h1>For Individuals</h1>
+            <p class="p_laptop">Start benefiting from the wellness experience. For <br>companies looking on increasing productivity, and improving <br>organization wellness.</p>
+            <p class="mobile">Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.</p>
+        </div>
+        <div class="div_form" id="smallscreen_form">
+            <form action="" id="mobile_form">
+                <p>
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" placeholder="Tolu" required>
+                </p>
+                <p>
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name">
+                </p>
+                <p>
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender" required>
+                        <option class="top" value="">Select here</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="None">None</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="Date_of_birth">Date of Birth</label>
+                    <input type="date" id="Date_of_birth" required>
+                </p>
+                <p>
+                    <label for="weight">Weight(KG)</label>
+                    <input type="number" id="weight" placeholder="Enter Weight" required>
+                </p>
+                <p>
+                    <label for="height">Height (CM)</label>
+                    <input type="number" placeholder="Enter height here.." id="number" required>
+                </p>
+                <p class="item">
+                    <label for="Activity">Activity Level</label>
+                    <select style="display: block;" name="Activity" id="Activity" required>
+                        <option id="top" value="">Select here</option>
+                        <option value="Level_1">Level 1</option>
+                        <option value="Level_2">Level 2</option>
+                        <option value="Level_3">Level 3</option>
+                    </select>
+                </p>
+                <p class="item">
+                    <label for="passwordInput">Password</label>
+                    <input type="password" id="passwordInput" required>
+                    <i class="fa-solid fa-eye" id="toggleIcon" onclick="togglePasswordVisibility()"></i>
+                    <i class="fa-solid fa-eye-slash" style="visibility: hidden;" id="iconHide" onclick="togglePasswordVisibility()"></i>
+                </p>
+                <p>
+                    <button type="submit">Register</button>
+                </p>
+                <p class="bottom_text">By clicking Register, you agree to our <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a></p>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
